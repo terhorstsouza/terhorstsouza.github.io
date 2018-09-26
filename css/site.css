@@ -18,7 +18,7 @@ h1{
 
 h2{
   font-size: 2.5rem;
-  margin: 1rem;
+  margin: 1.9rem;
   flex-grow: 1;
   flex-shrink: 1;
   align-content: flex-start;
@@ -46,13 +46,10 @@ p{
 }
 
 div{
-  font-size: 1.5rem;
   margin: 1rem;
-  float: none;
   flex-grow: 1;
   flex-shrink: 1;
   align-content: flex-start;
-  font-family: 'Work Sans', sans-serif;
 }
 
 a{
@@ -75,7 +72,6 @@ input{
   display: inline;
   font-size: 1.5rem;
   font-family: 'Work Sans', sans-serif;
-
 }
 
 /* classes */
@@ -95,7 +91,6 @@ input{
   display: inline;
   margin: 0rem;
   align-content: flex-start;
-
 }
 
 .bordinha {
@@ -111,47 +106,29 @@ input{
 
 .main{
   display: grid;
-  grid-template-columns: 25%, 1fr, 2fr;
-  grid-template-rows: 33%, 1fr, 1fr;
+  grid-template-rows: 33%, 33%, 34%;
 }
 
 .LETREIRO {
   font-size: 3rem;
 }
 
-.titulo{
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.foto_jogo{
-  display: inline;
+.foto{
   flex-grow: 1;
   flex-shrink: 1;
   text-align: center;
-  align-content: flex-start;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
 }
 
 .parte_1{
   flex-grow: 1;
   flex-shrink: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .parte_2{
   flex-grow: 1;
   flex-shrink: 1;
-  grid-column-start: 1;
-  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 3;
 }
@@ -174,45 +151,6 @@ input{
   margin-left: 1rem;
   margin-right: 1rem;
   background-color: #BDBDBF;
-}
-
-.navegador {
-  font-size: 2rem;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-content: flex-start;
-  margin-left: 20rem;
-  margin-top: 0.1rem;
-  display: inline;
-  align-content: space-between;
-}
-
-/* id */
-#home{
-  color: black;
-  display: inline;
-  position: relative;
-  border-style: solid;
-  float: right;
-  margin-top: 1rem;
-}
-
-#sobre{
-  color: black;
-  display: inline;
-  position: relative;
-  border-style: solid;
-  float: right;
-  margin-top: 1rem;
-}
-
-#contatos{
-  color: black;
-  display: inline;
-  position: relative;
-  border-style: solid;
-  float: right;
-  margin-top: 1rem;
 }
 
 .menu {
@@ -298,11 +236,16 @@ input{
   margin-left: -0.5rem;
 }
 
+/* id */
+
 #content {
   padding: 20px;
   transition: margin-left 0.7s;
   overflow: hidden;
 }
+
+
+/* formato para mobile */
 
 @media (max-width: 800px) {
   h1 {
@@ -313,7 +256,6 @@ input{
     margin-left: 1rem;
     margin-top: 0.1rem;
     display:inline;
-
   }
 
   .header {
@@ -342,27 +284,11 @@ input{
     flex-shrink: 1;
     align-content: flex-start;
     font-weight: bold;
-
   }
 
-  .parte_2 {
-    flex-grow: 1;
-    flex-shrink: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 6;
-  }
-
-  .foto_jogo {
-    display: inline;
-    flex-grow: 1;
-    flex-shrink: 1;
-    align-content: flex-start;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
+  .header {
+    position: relative;
+    background-color: rgb(225, 60, 60);
   }
 
   body {
@@ -414,7 +340,7 @@ input{
     margin-left: 0.5rem;
   }
 
-  #content {
+  .content {
     padding: 0rem;
     transition: margin-left 0.7s;
     overflow: hidden;
@@ -469,6 +395,5 @@ input{
     visibility: hidden;
 
   }
-   
-}
 
+}
